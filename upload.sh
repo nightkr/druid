@@ -46,6 +46,8 @@ if [ ! -z "`$s3ls "$S3PATH/$DRUID_TAR"`" ]; then
   exit 2
 fi
 
+echo "the dolphin2"
+
 if [ ! -z "`$s3ls "$S3PATH/$MYSQL_TAR"`" ]; then
   echo "ERROR: Refusing to overwrite $S3PATH/$MYSQL_TAR" >&2
   exit 2
