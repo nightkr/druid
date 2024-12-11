@@ -18,6 +18,9 @@
 # Script to upload tarball of assembly build to static.druid.io for serving
 #
 
+echo "TEST EDIT2"
+exit 2
+
 if [ $# -lt 1 ]; then
   echo "Usage: $0 <version>" >&2
   exit 2
