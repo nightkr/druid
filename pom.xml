@@ -233,6 +233,12 @@
 
     <dependencyManagement>
         <dependencies>
+            <!-- Mitigate CVE-2024-36114: See https://github.com/stackabletech/vulnerabilities/issues/834 -->
+            <dependency>
+                <groupId>io.airlift</groupId>
+                <artifactId>aircompressor</artifactId>
+                <version>0.27</version>
+            </dependency>
             <!-- Compile Scope -->
             <dependency>
                 <groupId>commons-codec</groupId>
